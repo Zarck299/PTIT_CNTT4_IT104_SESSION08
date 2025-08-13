@@ -8,5 +8,7 @@ enum Weekdays{
     Sunday = 'Chu Nhat' 
 }
 for (const day in Weekdays){
-    console.log(Weekdays[day as keyof typeof Weekdays]);
+    if(isNaN(Number(day))){
+        console.log(day);
+    }
 }

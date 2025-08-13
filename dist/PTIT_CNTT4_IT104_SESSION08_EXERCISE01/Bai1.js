@@ -10,5 +10,7 @@ var Weekdays;
     Weekdays["Sunday"] = "Chu Nhat";
 })(Weekdays || (Weekdays = {}));
 for (const day in Weekdays) {
-    console.log(Weekdays[day]);
+    if (isNaN(Number(day))) {
+        console.log(day);
+    }
 }
